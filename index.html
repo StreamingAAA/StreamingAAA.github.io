@@ -77,6 +77,10 @@
               <span class="author-block">
                 Run Chen,</span>
               <span class="author-block">
+                Kai Huang,</span>
+              <span class="author-block">
+                Haifeng Shi,</span>
+              <span class="author-block">
                 Yanxiang Zhuang,</span>
               <span class="author-block">
                 Weidong Zhang,</span>
@@ -128,54 +132,54 @@
       <div class="container">
         
         <!-- <h3 class="title is-4">Video Generation from Input Video & Prompts</h3> -->
-        <div id="results-carousel" class="carousel results-carousel">
+        <div id="results-carousel" class="results-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
 
           
 
           <div class="item item-motor-spider">
-            <video poster="" id="1" autoplay controls muted loop playsinline height="100%">
+            <video poster="" id="1" autoplay controls muted loop playsinline height="100%" style="width: 100%;">
               <source src="./results/case1.mp4"
                       type="video/mp4">
             </video>
           </div>
 
           <div class="item item-motor-spider">
-            <video poster="" id="1" autoplay controls muted loop playsinline height="100%">
+<video poster="" id="1" autoplay controls muted loop playsinline height="100%" style="width: 100%;">
               <source src="./results/case2.mp4"
                       type="video/mp4">
             </video>
           </div>
 
           <div class="item item-motor-spider">
-            <video poster="" id="1" autoplay controls muted loop playsinline height="100%">
+<video poster="" id="1" autoplay controls muted loop playsinline height="100%" style="width: 100%;">
               <source src="./results/case3.mp4"
                       type="video/mp4">
             </video>
           </div>
 
           <div class="item item-motor-spider">
-            <video poster="" id="1" autoplay controls muted loop playsinline height="100%">
+<video poster="" id="1" autoplay controls muted loop playsinline height="100%" style="width: 100%;">
               <source src="./results/case4.mp4"
                       type="video/mp4">
             </video>
           </div>
 
           <div class="item item-motor-spider">
-            <video poster="" id="1" autoplay controls muted loop playsinline height="100%">
+<video poster="" id="1" autoplay controls muted loop playsinline height="100%" style="width: 100%;">
               <source src="./results/case5.mp4"
                       type="video/mp4">
             </video>
           </div>
 
           <div class="item item-motor-spider">
-            <video poster="" id="1" autoplay controls muted loop playsinline height="100%">
+<video poster="" id="1" autoplay controls muted loop playsinline height="100%" style="width: 100%;">
               <source src="./results/case6.mp4"
                       type="video/mp4">
             </video>
           </div>
 
           <div class="item item-motor-spider">
-            <video poster="" id="1" autoplay controls muted loop playsinline height="100%">
+<video poster="" id="1" autoplay controls muted loop playsinline height="100%" style="width: 100%;">
               <source src="./results/case7.mp4"
                       type="video/mp4">
             </video>
@@ -183,46 +187,46 @@
 
 
           <div class="item item-motor-spider">
-            <video poster="" id="1" autoplay controls muted loop playsinline height="100%">
+<video poster="" id="1" autoplay controls muted loop playsinline height="100%" style="width: 100%;">
               <source src="./results/case8.mp4"
                       type="video/mp4">
             </video>
           </div>
 
           <div class="item item-motor-spider">
-            <video poster="" id="1" autoplay controls muted loop playsinline height="100%">
+<video poster="" id="1" autoplay controls muted loop playsinline height="100%" style="width: 100%;">
               <source src="./results/case9.mp4"
                       type="video/mp4">
             </video>
           </div>
 
           <div class="item item-motor-spider">
-            <video poster="" id="1" autoplay controls muted loop playsinline height="100%">
+<video poster="" id="1" autoplay controls muted loop playsinline height="100%" style="width: 100%;">
               <source src="./results/case10.mp4"
                       type="video/mp4">
             </video>
           </div>
 
           <div class="item item-motor-spider">
-            <video poster="" id="1" autoplay controls muted loop playsinline height="100%">
+<video poster="" id="1" autoplay controls muted loop playsinline height="100%" style="width: 100%;">
               <source src="./results/case11.mp4"
                       type="video/mp4">
             </video>
           </div>
 
           <div class="item item-motor-spider">
-            <video poster="" id="1" autoplay controls muted loop playsinline height="100%">
+<video poster="" id="1" autoplay controls muted loop playsinline height="100%" style="width: 100%;">
               <source src="./results/case12.mp4"
                       type="video/mp4">
             </video>
           </div>
 
-          <div class="item item-motor-spider">
-            <video poster="" id="1" autoplay controls muted loop playsinline height="100%">
+          <!-- <div class="item item-motor-spider">
+<video poster="" id="1" autoplay controls muted loop playsinline height="100%" style="width: 100%;">
               <source src="./results/case13.mp4"
                       type="video/mp4">
             </video>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -244,10 +248,15 @@
         <div class="column is-four-fifths">
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
-            <p>
-              Controllable streaming video generation offers a promising route toward interactive game simulation, yet existing methods remain far from practical gameplay. They often fail to jointly achieve high visual fidelity, high frame rates, and low interaction latency, resulting in poor responsiveness and degraded user experience. We present Streaming-AAA, a new paradigm for controllable infinite generation of AAA-quality game videos. Our system generates 1080p gameplay videos at over 40 FPS with end-to-end interaction latency around 200 ms, while supporting long-horizon play without severe temporal degradation or collapse.
+            <p>              
+Controllable streaming video generation offers a promising route toward interactive game simulation, yet existing methods remain far from practical gameplay. They often fail to jointly achieve high visual fidelity, high frame rates, and low interaction latency, resulting in poor responsiveness and degraded user experience. We present Streaming-AAA, a new paradigm for controllable infinite generation of AAA-quality game videos. On Nvidia A800 GPUs, our system generates 1080p gameplay videos at over 40 FPS with end-to-end interaction latency around 200 ms, while supporting long-horizon play without severe temporal degradation or collapse.
 Streaming-AAA is built upon three key designs. First, we redesign the VAE architecture for efficient high-resolution decoding, enabling real-time synthesis at 1080p. Second, we pretrain the diffusion model using diffusion forcing and significantly extend the temporal training horizon, allowing the model to capture long-term dependencies and maintain persistent memory. Third, we perform post-training distillation and memory compression to improve inference efficiency while retaining visual quality and temporal consistency. Experiments show that Streaming-AAA substantially improves visual fidelity, frame rate, latency, and long-term stability over prior controllable video generation approaches, enabling a significantly more playable experience for interactive AAA game video generation.
             </p>
+          </div>
+
+          <div class="has-text-centered" style="margin-top: 1.5rem;">
+            <img src="./figs/NGRintro.png" alt="NGR intro"
+                 style="width: 100%; height: auto; display: block; margin: 0 auto;">
           </div>
           
         </div>
@@ -264,39 +273,46 @@ Streaming-AAA is built upon three key designs. First, we redesign the VAE archit
       <div class="container">
         
         <h3 class="title is-4">Ours VS SOTA methods</h3>
-        <div id="results-carousel" class="carousel results-carousel">
+        <div id="results-carousel" class="results-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
 
           <div class="item item-motor-spider">
-            <video poster="" id="1" autoplay controls muted loop playsinline height="100%">
-              <source src="./results_cmp/020.mov"
-                      type="video/mp4">
-            </video>
-          </div>
-
-          <div class="item item-motor-spider">
-            <video poster="" id="1" autoplay controls muted loop playsinline height="100%">
+            <video poster="" id="1" autoplay controls muted loop playsinline height="100%" style="width: 100%;">
               <source src="./results_cmp/051.mov"
                       type="video/mp4">
             </video>
           </div>
 
           <div class="item item-motor-spider">
-            <video poster="" id="1" autoplay controls muted loop playsinline height="100%">
-              <source src="./results_cmp/075.mov"
-                      type="video/mp4">
-            </video>
-          </div>
-
-          <div class="item item-motor-spider">
-            <video poster="" id="1" autoplay controls muted loop playsinline height="100%">
+<video poster="" id="1" autoplay controls muted loop playsinline height="100%" style="width: 100%;">
               <source src="./results_cmp/079.mov"
                       type="video/mp4">
             </video>
           </div>
 
           <div class="item item-motor-spider">
-            <video poster="" id="1" autoplay controls muted loop playsinline height="100%">
+<video poster="" id="1" autoplay controls muted loop playsinline height="100%" style="width: 100%;">
               <source src="./results_cmp/099.mov"
+                      type="video/mp4">
+            </video>
+          </div>
+
+          <div class="item item-motor-spider">
+<video poster="" id="1" autoplay controls muted loop playsinline height="100%" style="width: 100%;">
+              <source src="./results_cmp/021.mov"
+                      type="video/mp4">
+            </video>
+          </div>
+
+          <div class="item item-motor-spider">
+<video poster="" id="1" autoplay controls muted loop playsinline height="100%" style="width: 100%;">
+              <source src="./results_cmp/075.mov"
+                      type="video/mp4">
+            </video>
+          </div>
+
+          <div class="item item-motor-spider">
+<video poster="" id="1" autoplay controls muted loop playsinline height="100%" style="width: 100%;">
+              <source src="./results_cmp/020.mov"
                       type="video/mp4">
             </video>
           </div>
